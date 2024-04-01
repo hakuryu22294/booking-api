@@ -1,10 +1,6 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-console.log(
-  process.env.MONGO_URI.replace('<password>', process.env.MONGO_PASSWORDS)
-);
-
 const connectDB = async () => {
   await mongoose
     .connect(
